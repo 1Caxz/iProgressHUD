@@ -44,8 +44,8 @@ pod 'iProgressHUD', '~> 1.1.1'
 
 # How to Use
 
-## Simple Usage
-You can use simple usage with default setting.
+## Quick Usage
+You can use quick usage with default setting.
 ```swift
 import iProgressHUD
 
@@ -54,13 +54,13 @@ class ViewController: UIViewController {
         // Attach iProgressHUD to views
         iProgressHUD.sharedInstance().attachProgress(toView: self.view)
         // Show iProgressHUD directly from view
-        self.view.showProgress()
+        view.showProgress()
     }
 }
 ```
 
 ## Custom Usage
-You can custom iProgressHUD appearance.
+You can custom iProgressHUD in your project. Please take a look at iProgressHUD Setting.
 ```swift
 import iProgressHUD
 
@@ -83,6 +83,15 @@ class ViewController: UIViewController {
 }
 ```
 
+## Show/Dismiss iProgressHUD
+You can show or dismiss iProgressHUD directly from a view already attached the iProgressHUD.
+```swift
+// Show iProgressHUD directly from view
+view.showProgress()
+// Stop iProgressHUD directly from view
+view.dismissProgress()
+```
+
 ## Update Caption & Indicator On The Fly
 You can change caption and indicator types on the fly directly from the view.
 ```swift
@@ -93,7 +102,7 @@ view.updateIndicator(style: .ballBeat)
 ```
 
 ## Add Delegete
-You can get response from event tounc, show and stop with iProgressHUDDelegete.
+Add iProgressHUDDelegete to your class/ViewController to get response onShow, onDismiss or onTouch. This method is optional to implement.
 ```swift
 import iProgressHUD
 
@@ -115,7 +124,7 @@ class ViewController: UIViewController {
         print("onShow")
     }
     
-    func onStop(view: UIView) {
+    func onDismiss(view: UIView) {
         print("onStop")
     }
     
