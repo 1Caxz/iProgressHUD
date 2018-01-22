@@ -84,7 +84,7 @@ class ViewController: UIViewController {
 ```
 
 ## Show/Dismiss iProgressHUD
-You can show or dismiss iProgressHUD directly from a view already attached the iProgressHUD.
+You can show or dismiss iProgressHUD directly from a view that already attached the progress.
 ```swift
 // Show iProgressHUD directly from view
 view.showProgress()
