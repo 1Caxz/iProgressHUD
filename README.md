@@ -19,6 +19,9 @@ An elegant, lightweight and responsive progress HUD for iOS app with very simple
 - [x] VERY SIMPLE USAGE!
 
 ## Preview
+<p align="center">
+<img width="100%" src="https://github.com/icaksama/iProgressHUD/blob/master/Preview.png?raw=true">
+</p>
 
 ## Cocoapods
 Add to `Podfile` :
@@ -148,8 +151,11 @@ iprogress.indicatorSize = 60
 /** Setting the alpha of modal view. Default is 0.7 */
 iprogress.alphaModal = 0.7
 
-/** Setting box size in percent of width view. Default is 40%. */
-iprogress.boxSize = 40
+/** Setting the alpha of box view. Default is 0.7 */
+open var alphaBox: CGFloat = 0.7
+
+/** Setting box size in percent of width view. Default is 50%. */
+iprogress.boxSize = 50
 
 /** Setting the corner radius of box view. Default is 12. */
 iprogress.boxCorner = 12
