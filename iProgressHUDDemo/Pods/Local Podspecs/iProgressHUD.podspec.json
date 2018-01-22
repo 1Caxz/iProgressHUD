@@ -1,0 +1,30 @@
+{
+  "name": "iProgressHUD",
+  "version": "1.1.1",
+  "license": "MIT",
+  "summary": "An elegant and light progress HUD for your iOS app that easy to use.",
+  "homepage": "https://github.com/icaksama/iProgressHUD",
+  "social_media_url": "https://www.facebook.com/icaksama.fanpage",
+  "authors": {
+    "icaksama": "icaksama@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/icaksama/iProgressHUD.git",
+    "tag": "1.1.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.0"
+  },
+  "source_files": [
+    "iProgressHUD/iProgressHUD/*.{swift,h}",
+    "iProgressHUD/iProgressHUD/**/*.{swift,h}",
+    "iProgressHUD/iProgressHUD/**/**/*.{swift,h}"
+  ]
+}

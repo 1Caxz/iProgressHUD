@@ -14,7 +14,8 @@ An elegant, lightweight and responsive progress HUD for iOS app with very simple
 - [x] Customizable
 - [x] Full animations
 - [x] Available 32 indicators by NVActivityIndicatorView
-- [x] Support modal view, dismissable and touchable
+- [x] Support modal view, dismiss and touchable
+- [x] Show and stop progress on view everywhere
 - [x] Support vertical and horizontal style
 - [x] VERY SIMPLE USAGE!
 

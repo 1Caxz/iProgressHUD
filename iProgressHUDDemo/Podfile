@@ -1,0 +1,6 @@
+use_frameworks!
+platform :ios, '9.0'
+
+target 'iProgressHUDDemo' do
+    pod 'iProgressHUD', :path => '~/Documents/icaksama/GIT/iProgressHUD'
+end

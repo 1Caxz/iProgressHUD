@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iProgressHUDDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="FbQ-pg-pfP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oM-sW-SUm">
+                                <rect key="frame" x="16" y="502" width="145" height="145"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icaksama" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-YB-kc7">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DdK-YB-kc7" secondAttribute="trailing" id="7XF-A7-q6G"/>
+                                    <constraint firstAttribute="height" constant="145" id="9W1-Qe-wX8"/>
+                                    <constraint firstItem="DdK-YB-kc7" firstAttribute="top" secondItem="5oM-sW-SUm" secondAttribute="top" id="Gzj-lW-JJj"/>
+                                    <constraint firstItem="DdK-YB-kc7" firstAttribute="leading" secondItem="5oM-sW-SUm" secondAttribute="leading" id="H5Z-II-US9"/>
+                                    <constraint firstAttribute="bottom" secondItem="DdK-YB-kc7" secondAttribute="bottom" id="N9U-D8-og3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7du-5I-8hx">
+                                <rect key="frame" x="214" y="502" width="145" height="145"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icaksama" translatesAutoresizingMaskIntoConstraints="NO" id="zdC-nV-4qP">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zdC-nV-4qP" firstAttribute="top" secondItem="7du-5I-8hx" secondAttribute="top" id="7Mf-U8-VFB"/>
+                                    <constraint firstAttribute="height" constant="145" id="CAl-XA-p8w"/>
+                                    <constraint firstAttribute="width" constant="145" id="FK8-ep-lPf"/>
+                                    <constraint firstItem="zdC-nV-4qP" firstAttribute="leading" secondItem="7du-5I-8hx" secondAttribute="leading" id="JA7-Jo-BJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="zdC-nV-4qP" secondAttribute="trailing" id="VKL-l1-FY2"/>
+                                    <constraint firstAttribute="bottom" secondItem="zdC-nV-4qP" secondAttribute="bottom" id="fIK-wJ-Pfa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgi-5F-cWE">
+                                <rect key="frame" x="16" y="204" width="343" height="290"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-jb-0Xq">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="290"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dR2-jb-0Xq" firstAttribute="leading" secondItem="Bgi-5F-cWE" secondAttribute="leading" id="DRc-m9-t7p"/>
+                                    <constraint firstItem="dR2-jb-0Xq" firstAttribute="top" secondItem="Bgi-5F-cWE" secondAttribute="top" id="K3S-pA-T5c"/>
+                                    <constraint firstAttribute="trailing" secondItem="dR2-jb-0Xq" secondAttribute="trailing" id="cWg-HZ-a2D"/>
+                                    <constraint firstAttribute="bottom" secondItem="dR2-jb-0Xq" secondAttribute="bottom" id="mOK-3b-djL"/>
+                                    <constraint firstAttribute="height" constant="290" id="x9k-xO-gdU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FbQ-pg-pfP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2B9-UG-UWS"/>
+                            <constraint firstItem="FbQ-pg-pfP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nid-gO-5Ye"/>
+                            <constraint firstItem="5oM-sW-SUm" firstAttribute="width" secondItem="7du-5I-8hx" secondAttribute="width" id="Rax-yt-ZPs"/>
+                            <constraint firstItem="5oM-sW-SUm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tls-23-J46"/>
+                            <constraint firstItem="Bgi-5F-cWE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xo4-vc-Xy9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7du-5I-8hx" secondAttribute="trailing" constant="16" id="bo8-DN-MLr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5oM-sW-SUm" secondAttribute="bottom" constant="20" id="dTT-7u-eIm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5oM-sW-SUm" secondAttribute="trailing" constant="214" id="e1a-U5-GFR"/>
+                            <constraint firstItem="FbQ-pg-pfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gNv-6a-g45"/>
+                            <constraint firstItem="FbQ-pg-pfP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nos-fh-Ann"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bgi-5F-cWE" secondAttribute="trailing" constant="16" id="p6H-8p-LQT"/>
+                            <constraint firstItem="5oM-sW-SUm" firstAttribute="top" secondItem="Bgi-5F-cWE" secondAttribute="bottom" constant="8" id="pkb-QC-7LM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7du-5I-8hx" secondAttribute="bottom" constant="20" id="wo8-AR-fta"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="Bgi-5F-cWE" id="ChE-TP-Wbv"/>
+                        <outlet property="view2" destination="5oM-sW-SUm" id="JFN-IW-mk6"/>
+                        <outlet property="view3" destination="7du-5I-8hx" id="WLs-He-tyh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.5" y="116.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="640" height="1136"/>
+        <image name="header" width="630" height="399"/>
+        <image name="icaksama" width="533" height="533"/>
+    </resources>
+</document>
