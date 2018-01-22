@@ -31,6 +31,7 @@ pod 'iProgressHUD', '~> 1.1.1'
 ```
 
 ## Indicator Types
+Available 32 indicators by NVActivityIndicatorView
 <p align="center">
 <img width="250" src="https://github.com/ninjaprox/NVActivityIndicatorView/blob/master/Demo.gif?raw=true">
 </p>
