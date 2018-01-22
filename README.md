@@ -19,9 +19,6 @@ An elegant, lightweight and responsive progress HUD for iOS app with very simple
 - [x] VERY SIMPLE USAGE!
 
 ## Preview
-<p align="center">
-<img width="350" src="https://github.com/ninjaprox/NVActivityIndicatorView/blob/master/Demo.gif?raw=true">
-</p>
 
 ## Cocoapods
 Add to `Podfile` :
@@ -30,6 +27,9 @@ pod 'iProgressHUD', '~> 1.1.1'
 ```
 
 ## Indicator Types
+<p align="center">
+<img width="250" src="https://github.com/ninjaprox/NVActivityIndicatorView/blob/master/Demo.gif?raw=true">
+</p>
 | Type | Type | Type | Type |
 |---|---|---|---|
 |1. ballPulse | 2. ballGridPulse | 3. ballClipRotate | 4. squareSpin|
