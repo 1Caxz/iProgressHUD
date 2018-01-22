@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 }
 ```
 
-## Change Caption & Indicator On The Fly
+## Update Caption & Indicator On The Fly
 You can change caption and indicator types on the fly directly from the view.
 ```swift
 // Change caption on the fly directly from the view
@@ -127,49 +127,41 @@ class ViewController: UIViewController {
 ## Setting List
 ```swift
 /** Setting indicator style. Default is ballClipRotatePulse. */
-iprogress.indicatorStyle: NVActivityIndicatorType = .ballClipRotatePulse
+iprogress.indicatorStyle = .ballClipRotatePulse
 /** Setting iprogress style in vertical or horizontal. Default is vertical. */
-iprogress.iprogressStyle: iProgressHUDStyles = .vertical
-/** Get the indicator view. */
-iprogress.indicatorView: NVActivityIndicatorView!
-/** Get the modal view. You can set image on modal view. */
-iprogress.modalView: UIImageView = UIImageView()
-/** Get the box view. You can set image on box view. */
-iprogress.boxView: UIImageView!
-/** Get the caption view. */
-iprogress.captionView: UILabel!
-/** Setting the indicator size in percent of box view. Default is 70%. */
-iprogress.indicatorSize: CGFloat = 60
+iprogress.iprogressStyle = .vertical
+/** Setting the indicator size in percent of box view. Default is 60%. */
+iprogress.indicatorSize = 60
 /** Setting the alpha of modal view. Default is 0.7 */
-iprogress.alphaModal: CGFloat = 0.7
-/** Setting box size in percent of width view. Default is 30%. */
-iprogress.boxSize: CGFloat = 40
+iprogress.alphaModal = 0.7
+/** Setting box size in percent of width view. Default is 40%. */
+iprogress.boxSize = 40
 /** Setting the corner radius of box view. Default is 12. */
-iprogress.boxCorner: CGFloat = 12
+iprogress.boxCorner = 12
 /** Setting the caption distance with indicator view. Default is 0. */
-iprogress.captionDistance: CGFloat = 0
+iprogress.captionDistance = 0
 /** Show or hide the caption view. Default is true. */
-iprogress.isShowCaption: Bool = true
+iprogress.isShowCaption = true
 /** Show or hide the modal view. Default is true. */
-iprogress.isShowModal: Bool = true
+iprogress.isShowModal = true
 /** Show or hide the box view. Default is true. */
-iprogress.isShowBox: Bool = true
+iprogress.isShowBox = true
 /** Give blur effect in modal view. Default is false. */
-iprogress.isBlurModal: Bool = false
+iprogress.isBlurModal = false
 /** Give blur effect in box view. Default is false. */
-iprogress.isBlurBox: Bool = false
+iprogress.isBlurBox = false
 /** Make the progress touchable. Default is false. */
-iprogress.isTouchDismiss: Bool = false
+iprogress.isTouchDismiss = false
 /** Change the modal view color. Default is white. */
-iprogress.modalColor: UIColor = .white
+iprogress.modalColor = .white
 /** Change the box view color. Default is black. */
-iprogress.boxColor: UIColor = .black
+iprogress.boxColor = .black
 /** Change the text color of caption. Default is white. */
-iprogress.captionColor: UIColor = .white
+iprogress.captionColor = .white
 /** Change the indicator view color. Default is white. */
-iprogress.indicatorColor: UIColor = .white
+iprogress.indicatorColor = .white
 /** Change the font size of caption. Default is 20. */
-iprogress.captionSize: CGFloat = 20
+iprogress.captionSize = 20
 ```
 
 ### Note : Please take a look at iProgressHUDDemo for detail usage.
