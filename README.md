@@ -106,7 +106,7 @@ Add iProgressHUDDelegete to your class/ViewController to get response onShow, on
 ```swift
 import iProgressHUD
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, iProgressHUDDelegete {
     override func viewDidAppear(_ animated: Bool) {
         let iprogress: iProgressHUD = iProgressHUD()
         
@@ -138,38 +138,55 @@ class ViewController: UIViewController {
 ```swift
 /** Setting indicator style. Default is ballClipRotatePulse. */
 iprogress.indicatorStyle = .ballClipRotatePulse
+
 /** Setting iprogress style in vertical or horizontal. Default is vertical. */
 iprogress.iprogressStyle = .vertical
+
 /** Setting the indicator size in percent of box view. Default is 60%. */
 iprogress.indicatorSize = 60
+
 /** Setting the alpha of modal view. Default is 0.7 */
 iprogress.alphaModal = 0.7
+
 /** Setting box size in percent of width view. Default is 40%. */
 iprogress.boxSize = 40
+
 /** Setting the corner radius of box view. Default is 12. */
 iprogress.boxCorner = 12
+
 /** Setting the caption distance with indicator view. Default is 0. */
 iprogress.captionDistance = 0
+
 /** Show or hide the caption view. Default is true. */
 iprogress.isShowCaption = true
+
 /** Show or hide the modal view. Default is true. */
 iprogress.isShowModal = true
+
 /** Show or hide the box view. Default is true. */
 iprogress.isShowBox = true
+
 /** Give blur effect in modal view. Default is false. */
 iprogress.isBlurModal = false
+
 /** Give blur effect in box view. Default is false. */
 iprogress.isBlurBox = false
+
 /** Make the progress touchable. Default is false. */
 iprogress.isTouchDismiss = false
+
 /** Change the modal view color. Default is white. */
 iprogress.modalColor = .white
+
 /** Change the box view color. Default is black. */
 iprogress.boxColor = .black
+
 /** Change the text color of caption. Default is white. */
 iprogress.captionColor = .white
+
 /** Change the indicator view color. Default is white. */
 iprogress.indicatorColor = .white
+
 /** Change the font size of caption. Default is 20. */
 iprogress.captionSize = 20
 ```
