@@ -124,7 +124,7 @@ class ViewController: UIViewController {
 }
 ```
 
-## Setting List
+## iProgressHUD Setting
 ```swift
 /** Setting indicator style. Default is ballClipRotatePulse. */
 iprogress.indicatorStyle = .ballClipRotatePulse
