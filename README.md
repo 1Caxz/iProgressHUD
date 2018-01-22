@@ -43,19 +43,133 @@ pod 'iProgressHUD', '~> 1.1.1'
 
 # How to Use
 
-## Add The Listener
-First, impletent the iSphinxDelegete in your class/ViewController :
+## Simple Usage
+You can use simple usage with default setting.
 ```swift
-import iSphinx
+import iProgressHUD
 
-class ViewController: UIViewController, iSphinxDelegete {
-    var isphinx: iSphinx = iSphinx()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        isphinx.delegete = self
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        // Attach iProgressHUD to views
+        iProgressHUD.sharedInstance().attachProgress(toView: self.view)
+        // Show iProgressHUD directly from view
+        self.view.showProgress()
     }
 }
+```
+
+## Custom Usage
+You can custom iProgressHUD appearance.
+```swift
+import iProgressHUD
+
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        let iprogress: iProgressHUD = iProgressHUD()
+        iprogress.isShowModal = true
+        iprogress.isShowCaption = true
+        iprogress.isTouchDismiss = true
+        
+        // Attach iProgressHUD to views
+        iprogress.attachProgress(toViews: view, view1, view2, view3)
+        
+        // Show iProgressHUD directly from view
+        view.showProgress()
+        view1.showProgress()
+        view2.showProgress()
+        view3.showProgress()
+    }
+}
+```
+
+## Change Caption & Indicator On The Fly
+You can change caption and indicator types on the fly directly from the view.
+```swift
+// Change caption on the fly directly from the view
+view.updateCaption(text: "New Caption Here!")
+// Change indicator type on the fly directly from the view
+view.updateIndicator(style: .ballBeat)
+```
+
+## Add Delegete
+You can get response from event tounc, show and stop with iProgressHUDDelegete.
+```swift
+import iProgressHUD
+
+class ViewController: UIViewController {
+    override func viewDidAppear(_ animated: Bool) {
+        let iprogress: iProgressHUD = iProgressHUD()
+        
+        // Set the delegete
+        iprogress.delegete = self
+
+        // Attach iProgressHUD to views
+        iprogress.attachProgress(toViews: view)
+
+        // Show iProgressHUD directly from view
+        view.showProgress()
+    }
+    
+    func onShow(view: UIView) {
+        print("onShow")
+    }
+    
+    func onStop(view: UIView) {
+        print("onStop")
+    }
+    
+    func onTouch(view: UIView) {
+        print("onTouch")
+    }
+}
+```
+
+## Setting List
+```swift
+/** Setting indicator style. Default is ballClipRotatePulse. */
+iprogress.indicatorStyle: NVActivityIndicatorType = .ballClipRotatePulse
+/** Setting iprogress style in vertical or horizontal. Default is vertical. */
+iprogress.iprogressStyle: iProgressHUDStyles = .vertical
+/** Get the indicator view. */
+iprogress.indicatorView: NVActivityIndicatorView!
+/** Get the modal view. You can set image on modal view. */
+iprogress.modalView: UIImageView = UIImageView()
+/** Get the box view. You can set image on box view. */
+iprogress.boxView: UIImageView!
+/** Get the caption view. */
+iprogress.captionView: UILabel!
+/** Setting the indicator size in percent of box view. Default is 70%. */
+iprogress.indicatorSize: CGFloat = 60
+/** Setting the alpha of modal view. Default is 0.7 */
+iprogress.alphaModal: CGFloat = 0.7
+/** Setting box size in percent of width view. Default is 30%. */
+iprogress.boxSize: CGFloat = 40
+/** Setting the corner radius of box view. Default is 12. */
+iprogress.boxCorner: CGFloat = 12
+/** Setting the caption distance with indicator view. Default is 0. */
+iprogress.captionDistance: CGFloat = 0
+/** Show or hide the caption view. Default is true. */
+iprogress.isShowCaption: Bool = true
+/** Show or hide the modal view. Default is true. */
+iprogress.isShowModal: Bool = true
+/** Show or hide the box view. Default is true. */
+iprogress.isShowBox: Bool = true
+/** Give blur effect in modal view. Default is false. */
+iprogress.isBlurModal: Bool = false
+/** Give blur effect in box view. Default is false. */
+iprogress.isBlurBox: Bool = false
+/** Make the progress touchable. Default is false. */
+iprogress.isTouchDismiss: Bool = false
+/** Change the modal view color. Default is white. */
+iprogress.modalColor: UIColor = .white
+/** Change the box view color. Default is black. */
+iprogress.boxColor: UIColor = .black
+/** Change the text color of caption. Default is white. */
+iprogress.captionColor: UIColor = .white
+/** Change the indicator view color. Default is white. */
+iprogress.indicatorColor: UIColor = .white
+/** Change the font size of caption. Default is 20. */
+iprogress.captionSize: CGFloat = 20
 ```
 
 ### Note : Please take a look at iProgressHUDDemo for detail usage.
