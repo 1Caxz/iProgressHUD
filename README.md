@@ -20,7 +20,7 @@ An elegant, lightweight and responsive progress HUD for iOS app with very simple
 
 ## Preview
 <p align="center">
-<img width="350" src="https://github.com/icaksama/iSphinx/blob/master/iSphinxPreview.gif?raw=true">
+<img width="350" src="https://github.com/ninjaprox/NVActivityIndicatorView/blob/master/Demo.gif?raw=true">
 </p>
 
 ## Cocoapods
