@@ -1,4 +1,8 @@
 # iProgressHUD
+<p align="center">
+<img width="100%" src="https://github.com/icaksama/iProgressHUD/blob/master/iProgressHUDLogo.png?raw=true">
+</p>
+
 [![Creator](https://img.shields.io/badge/creator-icaksama-green.svg)](https://www.linkedin.com/in/icaksama/)
 [![Travis](https://img.shields.io/travis/icaksama/iProgressHUD.svg)](https://travis-ci.org/icaksama/iProgressHUD)
 [![GitHub license](https://img.shields.io/github/license/icaksama/iProgressHUD.svg)](https://raw.githubusercontent.com/icaksama/iProgressHUD/master/LICENSE)
