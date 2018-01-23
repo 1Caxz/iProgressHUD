@@ -158,7 +158,7 @@ iprogress.indicatorSize = 60
 iprogress.alphaModal = 0.7
 
 /** Setting the alpha of box view. Default is 0.7 */
-open var alphaBox: CGFloat = 0.7
+iprogress.alphaBox = 0.7
 
 /** Setting box size in percent of width view. Default is 50%. */
 iprogress.boxSize = 50
