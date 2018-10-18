@@ -31,7 +31,8 @@ An elegant, lightweight and responsive progress HUD for iOS app with very simple
 ## Cocoapods
 Add to `Podfile` :
 ```podfile
-pod 'iProgressHUD', '~> 1.1.1'
+Swift 4   : pod 'iProgressHUD', '~> 1.1.1'
+Swift 4.2 : pod 'iProgressHUD', '~> 2.0'
 ```
 
 ## Indicator Types
