@@ -1,12 +1,12 @@
 PODS:
-  - iProgressHUD (1.1.1)
+  - iProgressHUD (2.0)
 
 DEPENDENCIES:
-  - iProgressHUD (~> 1.1.1)
+  - iProgressHUD (~> 2.0)
 
 SPEC CHECKSUMS:
   iProgressHUD: caa742128253c97f2c2e1ec59e2bbe6cf689df6a
 
 PODFILE CHECKSUM: df49b4bdf053c1b1c302a162eff15c6f2909f8de
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
