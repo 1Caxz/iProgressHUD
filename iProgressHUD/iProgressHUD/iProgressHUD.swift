@@ -181,11 +181,11 @@ open class iProgressHUD {
         view.addSubview(modalView)
         view.addSubview(boxView)
         if let lastViews = view.subviews.last {
-            modalView.bringSubview(toFront: lastViews)
+            modalView.bringSubviewToFront(lastViews)
         } else {
-            modalView.bringSubview(toFront: view)
+            modalView.bringSubviewToFront(view)
         }
-        boxView.bringSubview(toFront: modalView)
+        boxView.bringSubviewToFront(modalView)
         modalView.isHidden = true
         boxView.isHidden = true
         
