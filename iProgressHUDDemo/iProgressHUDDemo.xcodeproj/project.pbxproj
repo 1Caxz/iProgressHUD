@@ -100,7 +100,6 @@
 				6F19829920086D480063DB8B /* Frameworks */,
 				6F19829A20086D480063DB8B /* Resources */,
 				3E4C549477D315DF8AAEEFB7 /* [CP] Embed Pods Frameworks */,
-				FC11C35F602FC4A35A6FD36E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,7 +182,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/iProgressHUD/iProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -192,22 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC11C35F602FC4A35A6FD36E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -74,7 +74,7 @@ public extension UIView {
     }
     
     /** Show the iProgressHUD directly from this view. */
-    public func showProgress() {
+    func showProgress() {
         if iprogressHud == nil {
             print("Failed! iProgressHUD never attached in this view.")
             return
@@ -83,7 +83,7 @@ public extension UIView {
     }
     
     /** Stop the iProgressHUD directly from this view. */
-    public func dismissProgress() {
+    func dismissProgress() {
         if iprogressHud == nil {
             print("Failed! iProgressHUD never attached in this view.")
             return
@@ -92,7 +92,7 @@ public extension UIView {
     }
     
     /** Update the indicator style of iProgressHUD directly from this view. */
-    public func updateIndicator(style: NVActivityIndicatorType) {
+    func updateIndicator(style: NVActivityIndicatorType) {
         if iprogressHud == nil {
             print("Failed! iProgressHUD never attached in this view.")
             return
@@ -103,7 +103,7 @@ public extension UIView {
     }
     
     /** Update the caption of iProgressHUD directly from this view. */
-    public func updateCaption(text: String) {
+    func updateCaption(text: String) {
         if iprogressHud == nil {
             print("Failed! iProgressHUD never attached in this view.")
             return
@@ -115,7 +115,7 @@ public extension UIView {
     }
     
     /** Update colors of iProgressHUD. Set nil if want not to change. */
-    public func updateColors(modalColor: UIColor?, boxColor: UIColor?, indicatorColor: UIColor?, captionColor: UIColor?) {
+    func updateColors(modalColor: UIColor?, boxColor: UIColor?, indicatorColor: UIColor?, captionColor: UIColor?) {
         if iprogressHud == nil {
             print("Failed! iProgressHUD never attached in this view.")
             return
@@ -145,7 +145,7 @@ public extension UIView {
 
 internal extension iProgressHUD {
     
-    internal func copy() -> iProgressHUD {
+    func copy() -> iProgressHUD {
         let reinit = iProgressHUD()
         reinit.indicatorStyle = self.indicatorStyle
         reinit.iprogressStyle = self.iprogressStyle
