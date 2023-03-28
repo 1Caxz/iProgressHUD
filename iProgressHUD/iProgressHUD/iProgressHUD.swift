@@ -56,9 +56,9 @@ open class iProgressHUD {
     /** Make the progress touchable. Default is false. */
     open var isTouchDismiss: Bool = false
     /** Change the modal view color. Default is white. */
-    open var modalColor: UIColor = .white
+    open var modalColor: UIColor = .clear
     /** Change the box view color. Default is black. */
-    open var boxColor: UIColor = .black
+    open var boxColor: UIColor = .clear
     /** Change the text color of caption. Default is white. */
     open var captionColor: UIColor = .white
     /** Change the indicator view color. Default is white. */
