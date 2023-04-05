@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, '8.0'
   s.ios.deployment_target = '8.0'
   s.frameworks = 'Foundation', 'UIKit'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
   s.source_files = 'iProgressHUD/iProgressHUD/*.{swift,h}',
                    'iProgressHUD/iProgressHUD/**/*.{swift,h}',
                    'iProgressHUD/iProgressHUD/**/**/*.{swift,h}'
