@@ -12,6 +12,7 @@
 		6F1982A520086D480063DB8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1982A320086D480063DB8B /* Main.storyboard */; };
 		6F1982A720086D480063DB8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1982A620086D480063DB8B /* Assets.xcassets */; };
 		6F1982AA20086D480063DB8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1982A820086D480063DB8B /* LaunchScreen.storyboard */; };
+		9DF516EF2A682140009C68B7 /* iProgressHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9DF516EE2A68213F009C68B7 /* iProgressHUD.podspec */; };
 		F1B561DC0E6AB82FF8454AC1 /* Pods_iProgressHUDDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F7081FAFB4B934D23CA33B /* Pods_iProgressHUDDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		6F1982A920086D480063DB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1982AB20086D480063DB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CE9F8F394C8DFFA5214ADC1 /* Pods-iProgressHUDDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iProgressHUDDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9DF516EE2A68213F009C68B7 /* iProgressHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iProgressHUD.podspec; path = ../iProgressHUD.podspec; sourceTree = "<group>"; };
 		BA3F5DB75ABF51F7915E7308 /* Pods-iProgressHUDDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iProgressHUDDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iProgressHUDDemo/Pods-iProgressHUDDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +53,7 @@
 		6F19829320086D480063DB8B = {
 			isa = PBXGroup;
 			children = (
+				9DF516EE2A68213F009C68B7 /* iProgressHUD.podspec */,
 				6F19829E20086D480063DB8B /* iProgressHUDDemo */,
 				6F19829D20086D480063DB8B /* Products */,
 				8E8A0646127722933BDE3840 /* Pods */,
@@ -154,6 +157,7 @@
 				6F1982AA20086D480063DB8B /* LaunchScreen.storyboard in Resources */,
 				6F1982A720086D480063DB8B /* Assets.xcassets in Resources */,
 				6F1982A520086D480063DB8B /* Main.storyboard in Resources */,
+				9DF516EF2A682140009C68B7 /* iProgressHUD.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

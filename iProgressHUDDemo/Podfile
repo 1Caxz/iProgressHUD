@@ -1,6 +1,6 @@
 use_frameworks!
-platform :ios, '12.0'
+platform :ios, '15.0'
 
 target 'iProgressHUDDemo' do
-    pod 'iProgressHUD', '~> 1.2.0'
+    pod 'iProgressHUD', :git => 'https://github.com/epajot/iProgressHUD.git'
 end
