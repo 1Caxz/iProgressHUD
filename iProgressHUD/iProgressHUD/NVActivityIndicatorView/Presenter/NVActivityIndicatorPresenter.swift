@@ -224,7 +224,7 @@ public final class NVActivityIndicatorPresenter {
             containerView.addConstraint(spacingConstraint)
         }())
 
-        guard let keyWindow = UIApplication.shared.keyWindow else { return }
+        guard let keyWindow = getKeyWindow() else { return }
 
         keyWindow.addSubview(containerView)
         state = .showed
@@ -255,12 +255,19 @@ public final class NVActivityIndicatorPresenter {
     }
 
     private func hide() {
-        guard let keyWindow = UIApplication.shared.keyWindow else { return }
-
+        guard let keyWindow = getKeyWindow() else { return }
         for item in keyWindow.subviews
             where item.restorationIdentifier == restorationIdentifier {
             item.removeFromSuperview()
         }
         state = .hidden
+    }
+
+    func getKeyWindow() -> UIWindow? {
+        return  UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .compactMap({$0 as? UIWindowScene})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
     }
 }
