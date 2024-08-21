@@ -11,7 +11,13 @@ import Foundation
 import UIKit
 
 internal extension UIApplication {
-    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    class func topViewController(base: UIViewController? = UIApplication.shared.connectedScenes
+        .filter { $0.activationState == .foregroundActive }
+        .compactMap { $0 as? UIWindowScene }
+        .first?.windows
+        .filter { $0.isKeyWindow }
+        .first?.rootViewController) -> UIViewController?
+    {
         if let nav = base as? UINavigationController {
             return topViewController(base: nav.visibleViewController)
         }
