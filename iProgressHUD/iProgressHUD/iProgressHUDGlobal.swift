@@ -6,13 +6,31 @@
 //  Copyright © 2018 icaksama. All rights reserved.
 //
 
+import ObjectiveC
 import Foundation
 import UIKit
+
+internal extension UIApplication {
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
+}
 
 public extension UIView {
     
     private struct AssociatedKeys {
-        static var iprogressHud:iProgressHUD?
+        static var iprogressHud: Void?
     }
     
     /** Set x Position */
@@ -51,7 +69,11 @@ public extension UIView {
         }
         set {
             if let newValue = newValue {
-                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, newValue as iProgressHUD?, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                // Assurez-vous d'utiliser correctement la clé statique comme pointeur
+                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            } else {
+                // Si newValue est nil, vous devez retirer l'objet associé
+                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
         }
     }
