@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "iProgressHUD.h"
+#import <iProgressHUD/iProgressHUD.h>
 
 FOUNDATION_EXPORT double iProgressHUDVersionNumber;
 FOUNDATION_EXPORT const unsigned char iProgressHUDVersionString[];

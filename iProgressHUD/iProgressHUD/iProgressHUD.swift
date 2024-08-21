@@ -17,7 +17,7 @@ public enum iProgressHUDStyles {
 
 open class iProgressHUD {
     
-    fileprivate var view: UIView?
+    fileprivate weak var view: UIView?
     
     /** Setting indicator style. Default is ballClipRotatePulse. */
     open var indicatorStyle: NVActivityIndicatorType = .ballClipRotatePulse
@@ -26,11 +26,11 @@ open class iProgressHUD {
     /** Get the indicator view. */
     open var indicatorView: NVActivityIndicatorView!
     /** Get the modal view. You can set image on modal view. */
-    open let modalView: UIImageView = UIImageView()
+    public let modalView: UIImageView = UIImageView()
     /** Get the box view. You can set image on box view. */
-    open let boxView: UIImageView!
+    public let boxView: UIImageView!
     /** Get the caption view. */
-    open let captionView: UILabel!
+    public let captionView: UILabel!
     /** Setting the indicator size in percent of box view. Default is 60%. */
     open var indicatorSize: CGFloat = 60
     /** Setting the alpha of modal view. Default is 0.7 */
@@ -56,9 +56,9 @@ open class iProgressHUD {
     /** Make the progress touchable. Default is false. */
     open var isTouchDismiss: Bool = false
     /** Change the modal view color. Default is white. */
-    open var modalColor: UIColor = .white
+    open var modalColor: UIColor = .clear
     /** Change the box view color. Default is black. */
-    open var boxColor: UIColor = .black
+    open var boxColor: UIColor = .clear
     /** Change the text color of caption. Default is white. */
     open var captionColor: UIColor = .white
     /** Change the indicator view color. Default is white. */
@@ -82,7 +82,7 @@ open class iProgressHUD {
     }
     
     /** get sharedInstance class of iProgressHUD */
-    open static func sharedInstance() -> iProgressHUD {
+    public static func sharedInstance() -> iProgressHUD {
         let iPHUD = iProgressHUD()
         return iPHUD
     }
@@ -181,11 +181,11 @@ open class iProgressHUD {
         view.addSubview(modalView)
         view.addSubview(boxView)
         if let lastViews = view.subviews.last {
-            modalView.bringSubview(toFront: lastViews)
+            modalView.bringSubviewToFront(lastViews)
         } else {
-            modalView.bringSubview(toFront: view)
+            modalView.bringSubviewToFront(view)
         }
-        boxView.bringSubview(toFront: modalView)
+        boxView.bringSubviewToFront(modalView)
         modalView.isHidden = true
         boxView.isHidden = true
         
