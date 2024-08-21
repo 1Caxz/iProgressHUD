@@ -6,6 +6,7 @@
 //  Copyright © 2018 icaksama. All rights reserved.
 //
 
+import ObjectiveC
 import Foundation
 import UIKit
 
@@ -29,7 +30,7 @@ internal extension UIApplication {
 public extension UIView {
     
     private struct AssociatedKeys {
-        static var iprogressHud:iProgressHUD?
+        static var iprogressHud: Void?
     }
     
     /** Set x Position */
@@ -68,7 +69,11 @@ public extension UIView {
         }
         set {
             if let newValue = newValue {
-                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, newValue as iProgressHUD?, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+                // Assurez-vous d'utiliser correctement la clé statique comme pointeur
+                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            } else {
+                // Si newValue est nil, vous devez retirer l'objet associé
+                objc_setAssociatedObject(self, &AssociatedKeys.iprogressHud, nil, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             }
         }
     }
